@@ -1,0 +1,17 @@
+{
+	"type": "record",
+	"name": "UserInfo",
+	"namespace": "some.generic.metadata",
+	"fields": [ {
+		"name": "firstname",
+		"type": "string",		
+		"default": null
+	}, {
+		"name": "lastname",
+		"type": "string",
+		"default": null
+	}, {
+		"name": "numberOfTweets",
+		"type": "long"
+	} ]	
+}
