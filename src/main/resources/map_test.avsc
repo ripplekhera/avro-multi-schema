@@ -1,7 +1,7 @@
 {
     "type" : "record",
     "name" : "TwitterSchema",
-    "namespace" : "some.generic.namespace",
+    "namespace" : "some.genericMap.namespace",
     "fields" : [ {
         "name" : "username",
         "type" : "string",
@@ -11,12 +11,9 @@
         "type" : "string",
         "doc"  : "The content of the user's Twitter message"
     }, {
-        "name" : "timestamp",
-        "type" : "long",
-        "doc"  : "Unix epoch time in seconds"
-    }, {
-        "name": "userinfo",
-        "type": "some.generic.metadata.UserInfo"
-    }],
+        "name" : "mapData",
+        "type" : { "type": "map","values": "string"}
+    }
+    ],
     "doc:" : "A basic schema for storing Twitter messages"
 }
